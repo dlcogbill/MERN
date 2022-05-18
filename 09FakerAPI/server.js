@@ -54,7 +54,7 @@ app.get("/api/companies/new", (req,res) => {
 app.get("/api/user/company", (req,res) => {
     const newFakeUser = createUser();
     const newFakeCompany = createCompany();
-    res.json( newFakeUser, newFakeCompany)
+    res.json( { newFakeUser, newFakeCompany });
 });
 
 app.get("/api/users", (req,res) => {
